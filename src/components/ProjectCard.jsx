@@ -14,7 +14,7 @@ function ProjectCard({ name, description, tecnologias, imgSrc, redirect }){
                             <li>{tecnologia}</li>
                         )}
                     </ol>
-                    <a href={redirect} target="_blank" className="flex m-auto bg-green-300 hover:bg-emerald-400 duration-200 w-fit p-1 px-4 rounded-2xl">
+                    <a href={redirect} target="_blank" className="text-black flex m-auto bg-green-300 hover:bg-emerald-400 duration-200 w-fit p-1 px-4 rounded-2xl">
                         <ArrowUpRight />
                         Clique para saber mais
                     </a>
