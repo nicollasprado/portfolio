@@ -1,8 +1,4 @@
-function Home(){
-    const scrollToSection = (section) => {
-        var section = document.getElementById(section).scrollIntoView({ behavior: "smooth" });
-    };
-
+function Home( { scrollToSection } ){
     return (
         <div className="flex flex-col justify-center items-center h-screen leading-30">
             <div>
@@ -12,13 +8,22 @@ function Home(){
                 
                 <ol className="flex justify-around">
                     <li>
-                        <button className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold" onClick={() => scrollToSection('sobremim')}>Sobre mim</button>
+                        <button
+                        className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold"
+                        onClick={() => scrollToSection('sobremim')}
+                        >Sobre mim</button>
                     </li>
                     <li>
-                        <button className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold">Projetos</button>
+                        <button
+                        className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold"
+                        onClick={() => scrollToSection('projetos')}
+                        >Projetos</button>
                     </li>
                     <li>
-                        <button className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold">Cursos</button>
+                        <button
+                        className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold"
+                        onClick={() => scrollToSection('cursos')}
+                        >Cursos</button>
                     </li>
                     <li>
                         <button className="hover:cursor-pointer hover:text-emerald-500 duration-500 text-amber-400 text-2xl font-bold">Links</button>

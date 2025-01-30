@@ -23,7 +23,7 @@ function EstrelasBG(){
     return (
         <div>
             {[...Array(30)].map((_, i) => ( 
-                <CreateEstrela delay={Math.random() * 5}/>
+                <CreateEstrela key={i} delay={Math.random() * 5}/>
             ))}
         </div>
     )
